@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="gameboard">
+            <div class="box" id="cell0" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell1" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell2" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell3" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell4" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell5" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell6" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell7" onclick=" return game(this.id)"></div>
+            <div class="box" id="cell8" onclick=" return game(this.id)"></div>
+        </div>
+      <div class="score">
+         <div class="turn1">Player One (x)<div class="playerturn" id="player1"></div></div>
+         <div class="turn2">Player Two (o)<div class="playerturn" id="player2"></div></div>
+      </div>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
